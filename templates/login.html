@@ -14,19 +14,18 @@
     <div id="login-box">
       <h3 align="center">Login to JupyterHub</h3>
       {{ super() }}
+
+      <div class="logos">
+        <a class="logo" href="https://libretexts.org" target="_blank">
+          <img src="/hub/static/external/images/libretexts_logo.png" alt="Libretexts" style="max-height:150px;max-width:100%;">
+        </a>
+    </div>
+    
+
     </div>
   </div>
 
-  <div class="branding">
-    <div class="logos">
-      <a class="logo" href="https://libretexts.org" target="_blank">
-        <img src="/hub/static/external/images/libretexts_logo.png" alt="Libretexts" style="max-height:150px;max-width:100%;">
-      </a>
-
-
-    </div>
-  </div>
-
+ 
 
   {% endblock login %}
 
