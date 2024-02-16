@@ -8,6 +8,15 @@
 
 {% block main %}
 <div class="main-content container">
+  
+  {% block login %}
+  <div class="col-sm-4 left-col">
+    <div id="login-box">
+      <h3 align="center">Login to JupyterHub</h3>
+      {{ super() }}
+    </div>
+  </div>
+
   <div class="branding">
     <div class="logos">
       <a class="logo" href="https://libretexts.org" target="_blank">
@@ -18,13 +27,7 @@
     </div>
   </div>
 
-  {% block login %}
-  <div class="col-sm-4 left-col">
-    <div id="login-box">
-      <h3 align="center">Login to JupyterHub</h3>
-      {{ super() }}
-    </div>
-  </div>
+
   {% endblock login %}
 
   <div class="container col-sm-7">
